@@ -7,15 +7,15 @@
     android:layout_height="match_parent"
     tools:context=".SecondActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="400dp"
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
         android:layout_height="350dp"
-        android:layout_marginTop="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/istockphoto_601920764_1024x1024" />
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/lottie"/>
 
     <TextView
         android:id="@+id/textView1"
@@ -27,10 +27,11 @@
         android:textColor="#0F0710"
         android:gravity="center"
         android:fontFamily="cursive"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="110dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintBottom_toTopOf="@+id/imageView" />
 
     <TextView
         android:id="@+id/setName"
@@ -44,5 +45,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/istockphoto_601920764_1024x1024" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
