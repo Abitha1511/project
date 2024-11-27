@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
             }
             else{
                 val intent = Intent(this, SecondActivity::class.java)
-                intent.putExtra("name",name.text)
+                intent.putExtra("name",name.text.toString())
                 startActivity(intent)
             }
         }
